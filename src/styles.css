@@ -2,7 +2,74 @@
   font-family: sans-serif;
   text-align: center;
 }
-.P1 {
-  color: aquamarine;
-  font-size: 30px;
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  color:cadetblue;
+  font-size: 70px;
+}
+.Contador{
+  font-size: 320%;
+  position:relative;
+  top: 0vh;
+}
+#Boton1{
+  font-size: 160%;
+  position: relative;
+  top: 0vh;
+  margin-right: 5px;
+  background-color: green;
+  border-radius: 8%;
+  color:white;
+}
+#Boton2{
+  font-size: 160%;
+  position: relative;
+  top: 0vh;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: white;
+  color:black;
+}
+#Boton3{
+  font-size: 160%;
+  position: relative;
+  top: 0vh;
+  margin-right: 5px;
+  background-color: red;
+  border-radius: 8%;
+  color:white;
+}
+#Boton4{
+  font-size: 160%;
+  position: relative;
+  top: 5vh;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: green;
+  border-radius: 8%;
+  color:white;
+}
+#Boton5{
+  font-size: 160%;
+  position: relative;
+  top: 5vh;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: red;
+  border-radius: 8%;
+  color:white;
+}
+.wrapper{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ padding: 20px;
+ 
+}
+.card{
+  border: solid black 1px;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
 }
