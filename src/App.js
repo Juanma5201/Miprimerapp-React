@@ -1,5 +1,4 @@
 import "./styles.css";
-import Saludo from "./componentes/Saludo";
 import Cards from "./componentes/cards";
 import { useState } from "react";
 const headingStyles = { color: "blue", fontSize: "25px" };
@@ -23,22 +22,31 @@ const handleClick5=() =>{setCounter(counter -5)}
       </div>
       <div className="wrapper">
       <div><h1>Cards</h1></div>
-        <Card
+        <Card id=""
         img="https://cdn.pixabay.com/photo/2017/07/25/01/22/cat-2536662_960_720.jpg"
         title="Gato"
-        description="Jugando con una flor"/>
-        <Card
+        description="Jugando con una flor"
+        button="mas info"/>
+        <Card id=""
         img="https://cdn.pixabay.com/photo/2017/07/24/19/57/tiger-2535888_960_720.jpg"
         title="Tigre"
-        description="en Pantano"/>
-        <Card
+        description="en Pantano"
+        button="mas info"/>
+        <Card id=""
         img="https://cdn.pixabay.com/photo/2016/10/31/14/55/rottweiler-1785760_960_720.jpg"
         title="Perros"
-        description="Cachorros de Rottweiler"/>
-        <Card
+        description="Cachorros de Rottweiler"
+        button="mas info"/>
+        <Card id=""
         img="https://cdn.pixabay.com/photo/2017/12/11/15/34/lion-3012515_960_720.jpg"
         title="León"
-        description="León riendo con una niña"/>
+        description="León riendo con una niña"
+        button="mas info"/>
+        <Card id=""
+        img="https://larepublica.pe/resizer/v5N3auDjTa_C6y3w-bN_2zehcxk=/1102x648/top/smart/cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/ZRBF6W6YRJAFVPIDX3OPMMZ56A.JPG"
+        title="The Batman"
+        description="The Batman es una película estadounidense de superhéroes de DC Comics."
+        button="mas info"/>
       </div>
     </div>
   );
@@ -47,11 +55,11 @@ function Card(props){
   return(
     <div className="card">
       <div className="card_body">
-        <img style={{width: "200px"}} src={props.img}/>
+        <img className="card_img" src={props.img}/>
         <h2 className="card_title">{props.title}</h2>
         <p className="card_description">{props.description}</p>
       </div>
-      <button className="card_btn">mas info</button>
+      <button className="card_btn">{props.button}</button>
     </div>
   )
 }
